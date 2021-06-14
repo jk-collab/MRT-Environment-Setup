@@ -221,8 +221,10 @@ else
     echo "Downloading eclipse ..."
     download "$ECLIPSE_PACKAGE" eclipse.tar.gz
     echo "Extracting eclipse ..."
-    tar -xzf eclipse.tar.gz
-    rm -f eclipse.tar.gz
+    
+    # Extract tar but keep the configuration directory that has already been set up
+    tar -xzf --skip-old-files --no-overwrite-dir eclipse.tar.gz
+    #rm -f eclipse.tar.gz
     echo " DONE"
     echo ""
 fi

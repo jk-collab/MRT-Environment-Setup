@@ -1,3 +1,7 @@
+# ignore everything eclipse related except the configuration directory, which stores connections
 eclipse
+!eclipse/configuration
+
+# ignore all cross-compilation related files
 raspberrypi
 *-swp
