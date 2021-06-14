@@ -219,7 +219,7 @@ if [ -d "eclipse/eclipse" ]; then
     echo ""
 else
     echo "Downloading eclipse ..."
-    #download "$ECLIPSE_PACKAGE" eclipse.tar.gz
+    download "$ECLIPSE_PACKAGE" eclipse.tar.gz
     echo "Extracting eclipse ..."
     
     # Extract tar but keep the configuration directory that has already been set up in the repository
