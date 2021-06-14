@@ -268,12 +268,9 @@ fi
 for REPO in "${GITHUB_REPOS[@]}" 
 do
     echo " $REPO"
-    if [ ! -d "$WORKSPACE_DIR/$REPO" ]; then
-        git clone https://github.com/plt-tud/$REPO.git workspace/$REPO
-    else
-	git -C workspace/PLT_MRT_ARM-RPi2 reset --hard
-        git -C $WORKSPACE_DIR/$REPO pull
-    fi
+    
+    rm -r workspace/$REPO
+    git clone https://github.com/plt-tud/$REPO.git workspace/$REPO
 done
 
 echo "Changing permissions to rwx for group and user..."
