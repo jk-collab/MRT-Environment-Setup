@@ -214,16 +214,16 @@ if [ $CFG_CLEANUP = 'true' -a -d "eclipse" ]; then
   rm -rf "eclipse"
 fi
     
-if [ -d "eclipse" ]; then
+if [ -d "eclipse/eclipse" ]; then
     log_info "The 'eclipse' folder already exists."
     echo ""
 else
     echo "Downloading eclipse ..."
-    download "$ECLIPSE_PACKAGE" eclipse.tar.gz
+    #download "$ECLIPSE_PACKAGE" eclipse.tar.gz
     echo "Extracting eclipse ..."
     
     # Extract tar but keep the configuration directory that has already been set up in the repository
-    tar -xzf --skip-old-files --no-overwrite-dir eclipse.tar.gz
+    tar --skip-old-files -xzf eclipse.tar.gz
     rm -f eclipse.tar.gz
     
     echo " DONE"
