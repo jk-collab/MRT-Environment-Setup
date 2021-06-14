@@ -1,5 +1,5 @@
 # ignore everything eclipse related except the configuration directory, which stores connections
-eclipse
+eclipse/*
 !eclipse/configuration
 
 # ignore all cross-compilation related files
