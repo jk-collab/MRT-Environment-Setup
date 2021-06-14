@@ -214,7 +214,7 @@ if [ $CFG_CLEANUP = 'true' -a -d "eclipse" ]; then
   rm -rf "eclipse"
 fi
     
-if [ -d "eclipse/eclipse" ]; then
+if [ -f "eclipse/eclipse" ]; then
     log_info "The 'eclipse' folder already exists."
     echo ""
 else
