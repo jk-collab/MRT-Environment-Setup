@@ -269,11 +269,9 @@ for REPO in "${GITHUB_REPOS[@]}"
 do
     echo " $REPO"
     if [ ! -d "$WORKSPACE_DIR/$REPO" ]; then
-        git clone https://github.com/plt-tud/$REPO.git workspace/$REPO
-        git submodule update --init --recursive
+        #git clone https://github.com/plt-tud/$REPO.git workspace/$REPO
     else
-        git -C $WORKSPACE_DIR/$REPO pull
-        git submodule update --init --recursive
+        #git -C $WORKSPACE_DIR/$REPO pull
     fi
 done
 
