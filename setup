@@ -222,9 +222,10 @@ else
     download "$ECLIPSE_PACKAGE" eclipse.tar.gz
     echo "Extracting eclipse ..."
     
-    # Extract tar but keep the configuration directory that has already been set up
+    # Extract tar but keep the configuration directory that has already been set up in the repository
     tar -xzf --skip-old-files --no-overwrite-dir eclipse.tar.gz
-    #rm -f eclipse.tar.gz
+    rm -f eclipse.tar.gz
+    
     echo " DONE"
     echo ""
 fi
