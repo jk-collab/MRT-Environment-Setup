@@ -29,7 +29,7 @@ ARCHITECTURE=`uname -m`
 
 # Required packages ##
 # Essential packages for builiding, java (for Eclipse) and wget to download resources
-REQUIREMENTS="build-essential git openjdk-11-jre wget curl libncurses5:i386"
+REQUIREMENTS="build-essential git openjdk-11-jre wget curl libncurses5:i386 gdb"
 REQUIREMENTS_DEBIAN=$REQUIREMENTS
 REQUIREMENTS_SUSE="gcc gcc-c++ make git wget java-1_7_0-openjdk curl"
 
