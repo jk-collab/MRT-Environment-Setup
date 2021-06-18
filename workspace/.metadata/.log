@@ -2578,3 +2578,94 @@ org.eclipse.remote.core.exception.RemoteConnectionException: Connection canceled
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 !SUBENTRY 3 org.eclipse.remote.core 4 0 2021-06-18 15:37:43.491
 !MESSAGE Connection canceled by user
+
+!ENTRY org.eclipse.cdt.launch.remote 4 150 2021-06-18 15:39:12.543
+!MESSAGE Error during file upload.
+!STACK 1
+org.eclipse.remote.core.exception.RemoteConnectionException: Connection canceled by user
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.checkConnection(JschFileStore.java:95)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.fetchInfo(JschFileStore.java:156)
+	at org.eclipse.core.filesystem.provider.FileStore.copyFile(FileStore.java:208)
+	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:131)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:127)
+	at org.eclipse.cdt.launch.remote.RemoteHelper.remoteFileDownload(RemoteHelper.java:119)
+	at org.eclipse.cdt.launch.remote.launching.RemoteGdbLaunchDelegate.launch(RemoteGdbLaunchDelegate.java:61)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:862)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.remote.core.exception.RemoteConnectionException: Connection canceled by user
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.newSession(JSchConnection.java:789)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:829)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:802)
+	at org.eclipse.remote.internal.core.RemoteConnection.open(RemoteConnection.java:208)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.checkConnection(JschFileStore.java:88)
+	... 11 more
+!SUBENTRY 1 org.eclipse.remote.core 4 0 2021-06-18 15:39:12.543
+!MESSAGE Connection canceled by user
+!STACK 1
+org.eclipse.remote.core.exception.RemoteConnectionException: Connection canceled by user
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.newSession(JSchConnection.java:789)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:829)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:802)
+	at org.eclipse.remote.internal.core.RemoteConnection.open(RemoteConnection.java:208)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.checkConnection(JschFileStore.java:88)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.fetchInfo(JschFileStore.java:156)
+	at org.eclipse.core.filesystem.provider.FileStore.copyFile(FileStore.java:208)
+	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:131)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:127)
+	at org.eclipse.cdt.launch.remote.RemoteHelper.remoteFileDownload(RemoteHelper.java:119)
+	at org.eclipse.cdt.launch.remote.launching.RemoteGdbLaunchDelegate.launch(RemoteGdbLaunchDelegate.java:61)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:862)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 2 org.eclipse.remote.core 4 0 2021-06-18 15:39:12.543
+!MESSAGE Connection canceled by user
+!SUBENTRY 1 org.eclipse.cdt.launch.remote 4 150 2021-06-18 15:39:12.543
+!MESSAGE Connection canceled by user
+!STACK 1
+org.eclipse.remote.core.exception.RemoteConnectionException: Connection canceled by user
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.checkConnection(JschFileStore.java:95)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.fetchInfo(JschFileStore.java:156)
+	at org.eclipse.core.filesystem.provider.FileStore.copyFile(FileStore.java:208)
+	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:131)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:127)
+	at org.eclipse.cdt.launch.remote.RemoteHelper.remoteFileDownload(RemoteHelper.java:119)
+	at org.eclipse.cdt.launch.remote.launching.RemoteGdbLaunchDelegate.launch(RemoteGdbLaunchDelegate.java:61)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:862)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.remote.core.exception.RemoteConnectionException: Connection canceled by user
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.newSession(JSchConnection.java:789)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:829)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:802)
+	at org.eclipse.remote.internal.core.RemoteConnection.open(RemoteConnection.java:208)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.checkConnection(JschFileStore.java:88)
+	... 11 more
+!SUBENTRY 2 org.eclipse.remote.core 4 0 2021-06-18 15:39:12.543
+!MESSAGE Connection canceled by user
+!STACK 1
+org.eclipse.remote.core.exception.RemoteConnectionException: Connection canceled by user
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.newSession(JSchConnection.java:789)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:829)
+	at org.eclipse.remote.internal.jsch.core.JSchConnection.open(JSchConnection.java:802)
+	at org.eclipse.remote.internal.core.RemoteConnection.open(RemoteConnection.java:208)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.checkConnection(JschFileStore.java:88)
+	at org.eclipse.remote.internal.jsch.core.JschFileStore.fetchInfo(JschFileStore.java:156)
+	at org.eclipse.core.filesystem.provider.FileStore.copyFile(FileStore.java:208)
+	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:131)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:127)
+	at org.eclipse.cdt.launch.remote.RemoteHelper.remoteFileDownload(RemoteHelper.java:119)
+	at org.eclipse.cdt.launch.remote.launching.RemoteGdbLaunchDelegate.launch(RemoteGdbLaunchDelegate.java:61)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:862)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:720)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1029)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 3 org.eclipse.remote.core 4 0 2021-06-18 15:39:12.543
+!MESSAGE Connection canceled by user
