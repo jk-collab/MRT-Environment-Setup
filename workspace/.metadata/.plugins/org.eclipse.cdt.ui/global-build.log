@@ -1,0 +1,44 @@
+15:36:20 **** Clean-only build of configuration Debug for project Assembler_arm ****
+make clean 
+rm -rf  ./main.o  Assembler_arm
+ 
+15:36:21 **** Build of configuration Debug for project Assembler_arm ****
+make all 
+Building file: ../main.S
+Invoking: Cross GCC Assembler
+arm-linux-gnueabihf-as -g -gstabs -adhlns="main.o.lst" -o "main.o" "../main.S"
+Finished building: ../main.S
+ 
+Building target: Assembler_arm
+Invoking: Cross GCC Linker
+arm-linux-gnueabihf-gcc  -o "Assembler_arm"  ./main.o   
+Finished building target: Assembler_arm
+ 
+15:37:37 **** Clean-only build of configuration Debug for project C_arm ****
+make clean 
+rm -rf  ./src/C_arm.o  ./src/C_arm.d  C_arm
+ 
+15:37:38 **** Build of configuration Debug for project C_arm ****
+make all 
+Building file: ../src/C_arm.c
+Invoking: Cross GCC Compiler
+arm-linux-gnueabihf-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/C_arm.d" -MT"src/C_arm.o" -o "src/C_arm.o" "../src/C_arm.c"
+Finished building: ../src/C_arm.c
+ 
+Building target: C_arm
+Invoking: Cross GCC Linker
+arm-linux-gnueabihf-gcc  -o "C_arm"  ./src/C_arm.o   
+Finished building target: C_arm
+ 
+15:37:47 **** Build of configuration Debug for project C_x86 ****
+make all 
+Building file: ../src/C_x86.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/C_x86.d" -MT"src/C_x86.o" -o "src/C_x86.o" "../src/C_x86.c"
+Finished building: ../src/C_x86.c
+ 
+Building target: C_x86
+Invoking: GCC C Linker
+gcc  -o "C_x86"  ./src/C_x86.o   
+Finished building target: C_x86
+ 

@@ -1,0 +1,15 @@
+15:37:47 **** Build of configuration Debug for project C_x86 ****
+make all 
+Building file: ../src/C_x86.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/C_x86.d" -MT"src/C_x86.o" -o "src/C_x86.o" "../src/C_x86.c"
+Finished building: ../src/C_x86.c
+ 
+Building target: C_x86
+Invoking: GCC C Linker
+gcc  -o "C_x86"  ./src/C_x86.o   
+Finished building target: C_x86
+ 
+
+15:37:47 Build Finished. 0 errors, 0 warnings. (took 500ms)
+

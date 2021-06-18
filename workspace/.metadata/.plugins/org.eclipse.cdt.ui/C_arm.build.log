@@ -1,0 +1,15 @@
+15:37:38 **** Build of configuration Debug for project C_arm ****
+make all 
+Building file: ../src/C_arm.c
+Invoking: Cross GCC Compiler
+arm-linux-gnueabihf-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/C_arm.d" -MT"src/C_arm.o" -o "src/C_arm.o" "../src/C_arm.c"
+Finished building: ../src/C_arm.c
+ 
+Building target: C_arm
+Invoking: Cross GCC Linker
+arm-linux-gnueabihf-gcc  -o "C_arm"  ./src/C_arm.o   
+Finished building target: C_arm
+ 
+
+15:37:39 Build Finished. 0 errors, 0 warnings. (took 849ms)
+
